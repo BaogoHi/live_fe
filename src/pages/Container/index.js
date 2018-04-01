@@ -1,6 +1,6 @@
 import React from 'react'
 import {Layout, Menu, Breadcrumb, Icon} from 'antd'
-import {withRouter} from 'react-router-dom'
+import {withRouter,Link} from 'react-router-dom'
 import './index.less'
 const { Header, Content, Footer, Sider } = Layout
 const SubMenu = Menu.SubMenu
@@ -40,8 +40,10 @@ class Container extends React.Component {
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
-              <Icon type="pie-chart" />
-              <span>直播数据</span>
+              <Link to="/main/livedata">
+                <Icon type="pie-chart" />
+                <span>直播数据</span>
+              </Link>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="desktop" />

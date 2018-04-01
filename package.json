@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/data-set": "^0.8.6",
+    "@antv/g2": "^3.0.5-beta.6",
     "antd": "^3.3.3",
+    "bizcharts": "^3.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
