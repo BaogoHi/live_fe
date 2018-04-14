@@ -4,6 +4,8 @@ import Container from './pages/Container'
 import LiveData from './pages/LiveData'
 import LiveRoom from './pages/LiveRoom'
 import RealLive from './pages/RealLive'
+import UserList from './pages/UserList'
+import PersonCenter from './pages/PersonCenter'
 const App = () => (
   <main>
     <BrowserRouter>
@@ -15,7 +17,9 @@ const App = () => (
           <Container>
             <Route exact path='/main/livedata' component={LiveData}/>
             <Route exact path='/main/liveroom' component={LiveRoom}/>
-            <Route exact path='/main/reallive' component={RealLive} />
+            <Route exact path='/main/reallive/:id' component={RealLive}/>
+            <Route exact path='/main/userlist' component={UserList}/>
+            <Route exact path='/main/personcenter' component={PersonCenter}/>
           </Container>
         }/>
       </Switch>
