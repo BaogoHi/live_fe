@@ -14,16 +14,14 @@ class Container extends React.Component {
   }
 
   componentDidMount(){
-    this.setBreadcrumb()  
-  }
-
-  setBreadcrumb = () => {
-    console.log(this.props.location.pathname)
     let after = this.props.location.pathname.slice(1)
     this.setState({
       breadcrumb:after
-    })
+    }) 
   }
+ 
+
+
 
   onCollapse = (collapsed) => {
     this.setState({collapsed})
@@ -46,8 +44,10 @@ class Container extends React.Component {
               </Link>
             </Menu.Item>
             <Menu.Item key="2">
-              <Icon type="desktop" />
-              <span>直播频道</span>
+              <Link to="/main/liveroom">
+                <Icon type="desktop" />
+                <span>直播频道</span>
+              </Link>
             </Menu.Item>
             <SubMenu
               key="sub1"
