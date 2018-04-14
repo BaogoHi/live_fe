@@ -1,11 +1,12 @@
 import React from 'react'
 import {Icon} from 'antd'
+import {withRouter} from 'react-router-dom'
 import './index.less'
 class ZbRoomCard extends React.Component {
   render() {
     const {imgUrl,title,roomId,watch,love} = this.props
     const goToDetalis = () => {
-      console.log(roomId)
+      this.props.history.push(`/main/reallive/${roomId}`)
     }
     return (
       <div onClick={goToDetalis} className="room-card">
@@ -22,4 +23,4 @@ class ZbRoomCard extends React.Component {
   }
 }
 
-export default ZbRoomCard
+export default withRouter(ZbRoomCard)
