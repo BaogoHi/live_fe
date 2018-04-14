@@ -14,9 +14,9 @@ class Container extends React.Component {
   }
 
   componentDidMount(){
-    let after = this.props.location.pathname.slice(1)
+    // let after = this.props.location.pathname.slice(1)
     this.setState({
-      breadcrumb:after
+      breadcrumb:'治娱治乐第一品牌'
     }) 
   }
  
@@ -53,18 +53,26 @@ class Container extends React.Component {
               key="sub1"
               title={<span><Icon type="team" /><span>用户管理</span></span>}
             >
-              <Menu.Item key="3">用户列表</Menu.Item>
+              <Menu.Item key="3">
+                <Link to="/main/userlist">
+                  <span>用户列表</span>
+                </Link>
+              </Menu.Item>
             </SubMenu>
             <SubMenu
               key="sub2"
               title={<span><Icon type="user" /><span>个人中心</span></span>}
             >
-              <Menu.Item key="4">个人信息</Menu.Item>
+              <Menu.Item key="4">
+                <Link to="/main/personcenter">
+                  <span>个人信息</span>
+                </Link>
+              </Menu.Item>
             </SubMenu>
-            <Menu.Item key="5">
+            {/* <Menu.Item key="5">
               <Icon type="file" />
               <span>你的反馈</span>
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu>
         </Sider>
         <Layout>
