@@ -6,13 +6,15 @@ import LiveRoom from './pages/LiveRoom'
 import RealLive from './pages/RealLive'
 import UserList from './pages/UserList'
 import PersonCenter from './pages/PersonCenter'
+import Login from './pages/Login'
 const App = () => (
   <main>
     <BrowserRouter>
       <Switch>
-        <Redirect exact from='/' to='/main/livedata' />
+        <Redirect exact from='/' to='/Login' />
         {/* <Route exact path='/login' component={} />
         <Route exact path='/signup' component={} /> */}
+        <Route exact path='/login' component={Login} />
         <Route path='/main' render={() =>
           <Container>
             <Route exact path='/main/livedata' component={LiveData}/>

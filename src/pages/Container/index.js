@@ -68,6 +68,11 @@ class Container extends React.Component {
                   <span>个人信息</span>
                 </Link>
               </Menu.Item>
+              <Menu.Item key="5">
+                <Link to="/login">
+                  <span>退出登录</span>
+                </Link>
+              </Menu.Item>
             </SubMenu>
             {/* <Menu.Item key="5">
               <Icon type="file" />
