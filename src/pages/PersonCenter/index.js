@@ -6,11 +6,11 @@ class PersonCenter extends React.Component {
     this.state = {
       imgUrl:'https://frankfurt-cdr-contents-all.s3.cn-north-1.amazonaws.com.cn/Chinese_Cabbage_preview.jpeg',
       person:{
-        name:'klren',
+        name:'Alarak',
         sex:'男',
         years:'22',
-        email:'605747907@qq.com',
-        live:'http://zb.zzes1314.cn:8000/live/test.flv'
+        email:'4232332323@qq.com',
+        live:'http://zb.zzes1314.cn:8000/live/alarak.flv'
       }
 
     }

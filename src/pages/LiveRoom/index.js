@@ -9,11 +9,11 @@ class LiveRoom extends React.Component {
           className="room-card"
           imgUrl="https://frankfurt-cdr-contents-all.s3.cn-north-1.amazonaws.com.cn/Chinese_Cabbage_preview.jpeg" 
           roomId="1"
-          title="zzes"
-          watch="121"
-          love="121"
+          title="Alarak"
+          watch="10"
+          love="10"
         />
-        <ZbRoomCard 
+        {/* <ZbRoomCard 
           className="room-card"
           imgUrl="https://frankfurt-cdr-contents-all.s3.cn-north-1.amazonaws.com.cn/Chinese_Cabbage_preview.jpeg" 
           roomId="1"
@@ -36,7 +36,7 @@ class LiveRoom extends React.Component {
           title="zzes"
           watch="121"
           love="121"
-        />
+        /> */}
       </div>
     ) 
   }

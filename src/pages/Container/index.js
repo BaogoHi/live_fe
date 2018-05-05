@@ -16,7 +16,7 @@ class Container extends React.Component {
   componentDidMount(){
     // let after = this.props.location.pathname.slice(1)
     this.setState({
-      breadcrumb:'治娱治乐第一品牌'
+      breadcrumb:'Alarak的直播小站'
     }) 
   }
  
@@ -35,7 +35,8 @@ class Container extends React.Component {
           collapsed={this.state.collapsed}
           onCollapse={this.onCollapse}
         >
-          <div className="logo" />
+          {/* <div className="logo" /> */}
+          <div style={{fontSize:"25px",color:"#fff",textAlign:"center"}}>Alarak的直播小站</div>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Link to="/main/livedata">

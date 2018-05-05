@@ -5,18 +5,18 @@ import { DataSet } from '@antv/data-set';
 class ZbLineChart extends React.Component {
   render() {
     const data = [
-      { month: 'Jan', Live: 7.0, People: 3.9 },
-      { month: 'Feb', Live: 6.9, People: 4.2 },
-      { month: 'Mar', Live: 9.5, People: 5.7 },
-      { month: 'Apr', Live: 14.5, People: 8.5 },
-      { month: 'May', Live: 18.4, People: 11.9 },
-      { month: 'Jun', Live: 21.5, People: 15.2 },
-      { month: 'Jul', Live: 25.2, People: 17.0 },
-      { month: 'Aug', Live: 26.5, People: 16.6 },
-      { month: 'Sep', Live: 23.3, People: 14.2 },
-      { month: 'Oct', Live: 18.3, People: 10.3 },
-      { month: 'Nov', Live: 13.9, People: 6.6 },
-      { month: 'Dec', Live: 9.6, People: 4.8 }
+      { month: 'Jan', Live: 5, People:5 },
+      { month: 'Feb', Live: 1, People:5 },
+      { month: 'Mar', Live: 1, People:5 },
+      { month: 'Apr', Live: 1, People:5 },
+      { month: 'May', Live: 1, People:5 },
+      { month: 'Jun', Live: 1, People:5 },
+      { month: 'Jul', Live: 1, People:5 },
+      { month: 'Aug', Live: 1, People:5 },
+      { month: 'Sep', Live: 1, People:5 },
+      { month: 'Oct', Live: 1, People:5 },
+      { month: 'Nov', Live: 1, People:5 },
+      { month: 'Dec', Live: 1, People:5 }
     ];
   
     const ds = new DataSet();

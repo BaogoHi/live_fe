@@ -7,6 +7,7 @@ import RealLive from './pages/RealLive'
 import UserList from './pages/UserList'
 import PersonCenter from './pages/PersonCenter'
 import Login from './pages/Login'
+import Register from './pages/Register'
 const App = () => (
   <main>
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
         {/* <Route exact path='/login' component={} />
         <Route exact path='/signup' component={} /> */}
         <Route exact path='/login' component={Login} />
+        <Route exact path='/register' component={Register} />
         <Route path='/main' render={() =>
           <Container>
             <Route exact path='/main/livedata' component={LiveData}/>

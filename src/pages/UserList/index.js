@@ -4,19 +4,19 @@ import {Table} from 'antd'
 class UserList extends React.Component {
   render() {
     const columns = [{
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
+      title: '用户名',
+      dataIndex: 'username',
+      key: 'username',
     }, {
-      title: 'Age',
-      dataIndex: 'age',
-      key: 'age',
+      title: '邮箱',
+      dataIndex: 'email',
+      key: 'email',
     }, {
-      title: 'Address',
-      dataIndex: 'address',
-      key: 'address',
+      title: '直播间号码',
+      dataIndex: 'livecode',
+      key: 'livecode',
     }, {
-      title: 'Action',
+      title: '操作',
       key: 'action',
       render: (text, record) => (
         <span>
@@ -27,19 +27,14 @@ class UserList extends React.Component {
     
     const data = [{
       key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
+      username: 'klren',
+      email: '605747907@qq.com',
+      livecode: 'klren',
     }, {
       key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-    }, {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
+      username: 'Alarak',
+      email: '4232332323@qq.com',
+      livecode: 'alark',
     }];
     
     return (

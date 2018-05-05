@@ -7,8 +7,8 @@ class LiveData extends React.Component {
     return (
       <div>   
         <div className="flex-card">
-          <ZbDataCard  className="flex-card-item" icon= 'user' number= '123123 ' color= 'dc-blue '/>
-          <ZbDataCard  className="flex-card-item" icon= 'video-camera' number= '123123 ' color= 'dc-orange '/>
+          <ZbDataCard  className="flex-card-item" icon= 'user' number= '5 ' color= 'dc-blue '/>
+          <ZbDataCard  className="flex-card-item" icon= 'video-camera' number= '1 ' color= 'dc-orange '/>
           
         </div>
         <div className="chart">

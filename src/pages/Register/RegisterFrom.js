@@ -1,20 +1,15 @@
 import React from 'react'
-import {withRouter,Link} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 import {Button, Form, Input,message} from 'antd'
 
 const FormItem = Form.Item
 
-class LoginForm extends React.Component {
+class RegisterForm extends React.Component {
   handleLogin = (e) => {
     e.preventDefault()
     this.props.form.validateFields((err, values) => {
       if(!err) {
-        if(values.username==='guest'&& values.password==='123456'){
-          message.success("登录成功")
-          this.props.history.push('/main/livedata')
-        }else {
-          message.error("登录失败，请重新输入")
-        }
+        message.success("注册成功")
       }
     })
   }
@@ -24,26 +19,29 @@ class LoginForm extends React.Component {
       <Form onSubmit={this.handleLogin} className="login-form">
         <FormItem>
           {getFieldDecorator('username', {
-            rules: [{ required: true, message: '请输入您的用户名! 游客：guest' }],
+            rules: [{ required: true, message: '请输入您的用户名' }],
           })(
             <Input prefix={<i className="image-icon login-icon-user"></i>} placeholder="账号" />
           )}
         </FormItem>
         <FormItem>
           {getFieldDecorator('password', {
-            rules: [{ required: true, message: '请输入您的密码! 游客：123456' }],
+            rules: [{ required: true, message: '请输入您的密码' }],
           })(
             <Input prefix={<i className="image-icon login-icon-password"></i>} type="password" placeholder="密码" />
           )}
         </FormItem>
         <FormItem>
-          <Link to="/register" type="primary"  className="login-form-button">
-            用户注册
-          </Link>
+          {getFieldDecorator('email', {
+            rules: [{ required: true, message: '请输入您的邮箱' }],
+          })(
+            <Input prefix={<i className="image-icon login-icon-password"></i>} type="email" placeholder="邮箱" />
+          )}
+        </FormItem>
+        <FormItem>
           <Button type="primary" htmlType="submit" className="login-form-button">
-            登录
-          </Button>
-          
+            注册
+          </Button> 
         </FormItem>
       </Form>
     )
@@ -54,7 +52,8 @@ export default withRouter(Form.create({
   mapPropsToFields(props) {
     return {
       username: { value: '' },
-      password: { value: '' }
+      password: { value: '' },
+      email: {value: ''}
     }  
   }
-})(LoginForm))
+})(RegisterForm))
